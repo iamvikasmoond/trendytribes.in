@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="maintenance-wrapper">
+    <div class="maintenance-container">
+      <img src="img/logo.png" alt="Logo" class="logo">
+      <h1 class="maintenance-heading">We are Under Maintenance</h1>
+      <p class="maintenance-subheading">But you can still access</p>
+      <img src="img/oops.png" alt="Oops" class="oops-img">
+      <div class="button-grid">
+        <button class="maintenance-btn" data-option="track-order">Track Order</button>
+        <button class="maintenance-btn" data-option="order-history">Order History</button>
+        <button class="maintenance-btn" data-option="support">Support</button>
+        <button class="maintenance-btn" data-option="admin-panel">Admin Panel</button>
+        <button class="maintenance-btn" data-option="developer-area">Developer Area</button>
+        <button class="maintenance-btn" data-option="business-query">Business Query</button>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p class="copyright">ALL RIGHTS RESERVED © TRENDYTRIBES 2022</p>
+    </div>
+    <div class="success-message" id="success-message">
+      <p>Success! Details submitted.</p>
+    </div>
+    <div class="error-message" id="error-message">
+      <p>Invalid details. User does not exist.</p>
+    </div>
+  </div>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <form id="user-form">
+        <div class="form-group" id="common-fields">
+          <label for="user-input">Enter Details:</label>
+          <input type="text" id="user-input" class="form-control" required>
+        </div>
+        <div class="form-group admin-fields">
+          <label for="user-id">User ID / Mobile Number / Email:</label>
+          <input type="text" id="user-id" class="form-control">
+          <label for="admin-password">Password:</label>
+          <input type="password" id="admin-password" class="form-control">
+        </div>
+        <div class="form-group developer-fields">
+          <label for="developer-id">Developer ID:</label>
+          <input type="text" id="developer-id" class="form-control">
+          <label for="company-mail">Company Mail:</label>
+          <input type="email" id="company-mail" class="form-control">
+          <label for="dev-password">Password:</label>
+          <input type="password" id="dev-password" class="form-control">
+        </div>
+        <button type="submit" class="form-btn">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
